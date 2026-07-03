@@ -1,0 +1,17 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/cmake_install.cmake",
+		"/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/external/cmake_install.cmake",
+		"/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/external/libdivsufsort/cmake_install.cmake",
+		"/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/external/libdivsufsort/pkgconfig/cmake_install.cmake",
+		"/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/external/libdivsufsort/include/cmake_install.cmake",
+		"/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/external/libdivsufsort/lib/cmake_install.cmake",
+		"/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/external/googletest/cmake_install.cmake",
+		"/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/include/cmake_install.cmake",
+		"/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/include/sdsl/cmake_install.cmake",
+		"/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/lib/cmake_install.cmake",
+		"/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/test/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

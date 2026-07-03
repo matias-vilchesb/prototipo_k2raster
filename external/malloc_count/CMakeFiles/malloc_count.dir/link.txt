@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libmalloc_count.a CMakeFiles/malloc_count.dir/src/malloc_count.cpp.o CMakeFiles/malloc_count.dir/src/stack_count.cpp.o
+/usr/bin/ranlib ../../lib/libmalloc_count.a

@@ -1,2 +1,13 @@
-cmake-build-debug/
-.idea/
+# Ignorar carpetas de compilación
+build/
+bin/
+lib/
+
+# Ignorar archivos temporales de Python
+__pycache__/
+*.pyc
+
+# Ignorar tus datos de prueba (para que no pesen en GitHub)
+*.bin
+*.tif
+*.k2r

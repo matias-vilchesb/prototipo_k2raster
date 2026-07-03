@@ -2317,6 +2317,97 @@ namespace k2raster {
             } // END FOR x
             return count_cells;
         }
+        public:
+        //*******************************************************//
+        //**************** ZOOM QUERIES *************************//
+        //*******************************************************//
+        size_type get_values_window_zoom(size_type xini, size_type xend, size_type yini, size_type yend,
+                                         ushort target_level, std::vector<value_type> &result) {
+            size_type count_cells = 0; 
+            result.resize((xend - xini + 1) * (yend - yini + 1));
+
+            if (this->k_t.empty()) {
+                value_type val = this->k_max_value;
+                for (auto x = xini; x <= xend; x++){
+                    for (auto y= yend; y <= yend; y++){
+                        result[count_cells++] = val;
+                    }
+                }
+                return count_cells;
+            }
+
+            ushort k = this->get_k(0);
+            return get_values_window_zoom_helper(xini, xend, yini, yend, 0, 0,
+                    this->k_max_value, 0, this->k_size / k, 1,
+                    result, xini, yini, (yend - yini + 1), target_level);
+        }
+
+    protected:
+        size_type get_values_window_zoom_helper(size_type xini, size_type xend, size_type yini, size_type yend,
+                                                size_type base_x, size_type base_y,
+                                                value_type f_max_value,
+                                                size_type children_pos, size_type children_size, ushort level,
+                                                std::vector<value_type> &result,
+                                                size_type or_x, size_type or_y, size_type window_size,
+                                                ushort target_level) {
+            size_type pos;
+            size_type c_base_x, c_base_y;
+            value_type max_value;
+
+            ushort k = this->get_k(level-1);
+            bool is_uniform, is_leaf = level == this->k_height;
+            size_type count_cells = 0;
+
+            size_type limit_i_x = (xini - base_x) / children_size;
+            size_type limit_e_x = (xend - base_x) / children_size;
+            size_type limit_i_y = (yini - base_y) / children_size;
+            size_type limit_e_y = (yend - base_y) / children_size;
+
+            for (auto x = limit_i_x; x <= limit_e_x; x++) {
+                c_base_x = base_x + x * children_size;
+                for (auto y = limit_i_y; y <= limit_e_y; y++) {
+                    pos = children_pos + x * k + y;
+                    c_base_y = base_y + y * children_size;
+
+                    max_value = f_max_value - this->get_max_value(level, pos);
+
+                    auto c_xini = std::max(c_base_x, xini);
+                    auto c_xend = std::min(c_base_x + children_size - 1, xend);
+                    auto c_yini = std::max(c_base_y, yini);
+                    auto c_yend = std::min(c_base_y + children_size - 1, yend);
+
+                    is_uniform = is_leaf || !this->k_t[pos] || level == target_level;
+
+                    if (is_uniform) {
+                        size_type cell_pos;
+                        for (auto dx = c_xini; dx <= c_xend; dx++) {
+                            cell_pos = (dx - or_x) * window_size + (c_yini - or_y);
+                            for (auto dy = c_yini; dy <= c_yend; dy++) {
+                                result[cell_pos++] = max_value;
+                            }
+                        }
+                        count_cells += (c_xend-c_xini+1) * (c_yend-c_yini+1);
+                        continue;
+                    } else {
+                        if (this->is_plain_level(level)) {
+                            size_type ones = (this->k_t_rank1(pos) + 1) - (this->k_accum_min_values[level-1]+1);
+                            count_cells += this->get_values_window_plain(c_xini, c_xend, c_yini, c_yend,
+                                                                   children_size, ones * children_size* children_size,
+                                                                   max_value, result, or_x, or_y, window_size);
+                        } else {
+                            size_type new_children_pos = this->get_children_position(pos, level);
+                            count_cells += get_values_window_zoom_helper(c_xini, c_xend, c_yini, c_yend,
+                                                                    c_base_x, c_base_y, max_value,
+                                                                    new_children_pos,
+                                                                    children_size / this->get_k(level),
+                                                                    level + 1,
+                                                                    result, or_x, or_y, window_size, target_level);
+                        }
+                    }
+                }
+            }
+            return count_cells;
+        }
 
 
 

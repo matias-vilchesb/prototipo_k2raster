@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.12)
+cmake_minimum_required(VERSION 4.2.3)
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/CMakeModules")
 include(AppendCompilerFlags)
 
@@ -84,8 +84,9 @@ else()
     append_cxx_compiler_flags("-stdlib=libc++" "CLANG" CMAKE_CXX_FLAGS)
     append_cxx_compiler_flags("-msse4.2 -O3  -ffast-math -funroll-loops -DNDEBUG" "CLANG" CMAKE_CXX_FLAGS_RELEASE)
 endif()
-include(CheckSSE)
-FindSSE ()
+#include(CheckSSE)
+#FindSSE ()
+set(CMAKE_REQUIRED_FLAGS " ${CMAKE_CXX_FLAGS} -msse4.2 -O3 -ffast-math -funroll-loops -std=c++14")
 if( SSE4_2_FOUND )
     if( CMAKE_COMPILER_IS_GNUCXX )
         append_cxx_compiler_flags("-msse4.2" "GCC" CMAKE_CXX_FLAGS)
@@ -266,3 +267,19 @@ target_link_libraries(test_algebra_k2_raster sdsl divsufsort divsufsort64 gtest)
 # TEST (Dac)
 add_executable(test_dac test/test_new_DAC.cpp ${SOURCES})
 target_link_libraries(test_dac sdsl divsufsort divsufsort64 gtest)
+
+# --- Configuración para Python Wrapper (Pybind11) ---
+find_package(pybind11 CONFIG REQUIRED)
+
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
+# Generar la librería de Python
+pybind11_add_module(k2raster_engine wrapper.cpp)
+
+# Asegurar que el wrapper encuentre los includes del proyecto
+target_include_directories(k2raster_engine PRIVATE include)
+
+target_link_libraries(k2raster_engine PRIVATE sdsl divsufsort divsufsort64)
+# --- FORZAR -fPIC GLOBALMENTE DESDE EL INICIO ---
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+add_compile_options(-fPIC)

@@ -232,8 +232,8 @@ class k2_raster_base
                 k_min_value = std::move(tr.k_min_value);
                 k_list_max = std::move(tr.k_list_max);
                 k_list_min = std::move(tr.k_list_min);
-                k_accum_min_values = std::move(tr.k_acum_min_values);
-                k_accum_max_values = std::move(tr.k_acum_max_values);
+                k_accum_min_values = std::move(tr.k_accum_min_values);
+                k_accum_max_values = std::move(tr.k_accum_max_values);
             }
             return *this;
         }
@@ -291,8 +291,8 @@ class k2_raster_base
                 std::swap(k_min_value, tr.k_min_value);
                 std::swap(k_list_max, tr.k_list_max);
                 std::swap(k_list_min, tr.k_list_min);
-                std::swap(k_accum_min_values, tr.k_acum_min_values);
-                std::swap(k_accum_max_values, tr.k_acum_max_values);
+                std::swap(k_accum_min_values, tr.k_accum_min_values);
+                std::swap(k_accum_max_values, tr.k_accum_max_values);
             }
         }
 

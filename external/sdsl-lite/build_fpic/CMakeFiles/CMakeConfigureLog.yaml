@@ -1,0 +1,3119 @@
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/uname"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/uname"
+      - "/usr/local/sbin/uname"
+      - "/usr/local/bin/uname"
+      - "/usr/sbin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      ENV{PATH}:
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      The system is: Linux - 7.0.0-14-generic - x86_64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gmake"
+      - "make"
+      - "smake"
+    candidate_directories:
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gmake"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gmake"
+      - "/usr/local/sbin/gmake"
+      - "/usr/local/bin/gmake"
+      - "/usr/sbin/gmake"
+    found: "/usr/bin/gmake"
+    search_context:
+      ENV{PATH}:
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER"
+    description: "CXX compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "c++"
+      - "CC"
+      - "g++"
+      - "aCC"
+      - "cl"
+      - "bcc"
+      - "xlC"
+      - "icpx"
+      - "icx"
+      - "clang++"
+    candidate_directories:
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/c++"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/c++"
+      - "/usr/local/sbin/c++"
+      - "/usr/local/bin/c++"
+      - "/usr/sbin/c++"
+    found: "/usr/bin/c++"
+    search_context:
+      ENV{PATH}:
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/usr/share/cmake-4.2/Modules/"
+      - "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/CMakeModules/"
+    found: "/usr/share/cmake-4.2/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/4.2.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ar"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/ar"
+    search_context:
+      ENV{PATH}:
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ranlib"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "strip"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/strip"
+    search_context:
+      ENV{PATH}:
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ld"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/ld"
+    search_context:
+      ENV{PATH}:
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nm"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/nm"
+    search_context:
+      ENV{PATH}:
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objdump"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/objdump"
+    search_context:
+      ENV{PATH}:
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objcopy"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/objcopy"
+    search_context:
+      ENV{PATH}:
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "readelf"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/readelf"
+    search_context:
+      ENV{PATH}:
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "dlltool"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/usr/bin/dlltool"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/dlltool"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/dlltool"
+      - "/usr/local/sbin/dlltool"
+      - "/usr/local/bin/dlltool"
+      - "/usr/sbin/dlltool"
+      - "/sbin/dlltool"
+      - "/bin/dlltool"
+      - "/usr/games/dlltool"
+      - "/usr/local/games/dlltool"
+      - "/snap/bin/dlltool"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "addr2line"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/addr2line"
+    search_context:
+      ENV{PATH}:
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tapi"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/usr/bin/tapi"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/tapi"
+      - "/usr/local/sbin/tapi"
+      - "/usr/local/bin/tapi"
+      - "/usr/sbin/tapi"
+      - "/sbin/tapi"
+      - "/bin/tapi"
+      - "/usr/games/tapi"
+      - "/usr/local/games/tapi"
+      - "/snap/bin/tapi"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ar-15.2"
+      - "gcc-ar-15"
+      - "gcc-ar15"
+      - "gcc-ar"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/usr/bin/gcc-ar-15.2"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.2"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-15.2"
+      - "/usr/local/sbin/gcc-ar-15.2"
+      - "/usr/local/bin/gcc-ar-15.2"
+      - "/usr/sbin/gcc-ar-15.2"
+      - "/sbin/gcc-ar-15.2"
+      - "/bin/gcc-ar-15.2"
+      - "/usr/games/gcc-ar-15.2"
+      - "/usr/local/games/gcc-ar-15.2"
+      - "/snap/bin/gcc-ar-15.2"
+    found: "/usr/bin/gcc-ar-15"
+    search_context:
+      ENV{PATH}:
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ranlib-15.2"
+      - "gcc-ranlib-15"
+      - "gcc-ranlib15"
+      - "gcc-ranlib"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/usr/bin/gcc-ranlib-15.2"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.2"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-15.2"
+      - "/usr/local/sbin/gcc-ranlib-15.2"
+      - "/usr/local/bin/gcc-ranlib-15.2"
+      - "/usr/sbin/gcc-ranlib-15.2"
+      - "/sbin/gcc-ranlib-15.2"
+      - "/bin/gcc-ranlib-15.2"
+      - "/usr/games/gcc-ranlib-15.2"
+      - "/usr/local/games/gcc-ranlib-15.2"
+      - "/snap/bin/gcc-ranlib-15.2"
+    found: "/usr/bin/gcc-ranlib-15"
+    search_context:
+      ENV{PATH}:
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCompiler.cmake:54 (find_program)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:64 (_cmake_find_compiler)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER"
+    description: "C compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cc"
+      - "gcc"
+      - "cl"
+      - "bcc"
+      - "xlc"
+      - "icx"
+      - "clang"
+    candidate_directories:
+      - "/usr/bin/"
+    found: "/usr/bin/cc"
+    search_context:
+      ENV{PATH}:
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "/usr/share/cmake-4.2/Modules/"
+      - "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/CMakeModules/"
+    found: "/usr/share/cmake-4.2/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/4.2.3/CompilerIdC/a.out
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ar-15.2"
+      - "gcc-ar-15"
+      - "gcc-ar15"
+      - "gcc-ar"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/usr/bin/gcc-ar-15.2"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.2"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-15.2"
+      - "/usr/local/sbin/gcc-ar-15.2"
+      - "/usr/local/bin/gcc-ar-15.2"
+      - "/usr/sbin/gcc-ar-15.2"
+      - "/sbin/gcc-ar-15.2"
+      - "/bin/gcc-ar-15.2"
+      - "/usr/games/gcc-ar-15.2"
+      - "/usr/local/games/gcc-ar-15.2"
+      - "/snap/bin/gcc-ar-15.2"
+    found: "/usr/bin/gcc-ar-15"
+    search_context:
+      ENV{PATH}:
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ranlib-15.2"
+      - "gcc-ranlib-15"
+      - "gcc-ranlib15"
+      - "gcc-ranlib"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/usr/bin/gcc-ranlib-15.2"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.2"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-15.2"
+      - "/usr/local/sbin/gcc-ranlib-15.2"
+      - "/usr/local/bin/gcc-ranlib-15.2"
+      - "/usr/sbin/gcc-ranlib-15.2"
+      - "/sbin/gcc-ranlib-15.2"
+      - "/bin/gcc-ranlib-15.2"
+      - "/usr/games/gcc-ranlib-15.2"
+      - "/usr/local/games/gcc-ranlib-15.2"
+      - "/snap/bin/gcc-ranlib-15.2"
+    found: "/usr/bin/gcc-ranlib-15"
+    search_context:
+      ENV{PATH}:
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-rGaMKk"
+      binary: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-rGaMKk"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/CMakeModules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-rGaMKk'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8d228/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8d228.dir/build.make CMakeFiles/cmTC_8d228.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-rGaMKk'
+        Building CXX object CMakeFiles/cmTC_8d228.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -fPIE   -v -o CMakeFiles/cmTC_8d228.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 15.2.0-16ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-15/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust,cobol,algol68 --prefix=/usr --with-gcc-major-version-only --program-suffix=-15 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-15-j35TAX/gcc-15-15.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-15-j35TAX/gcc-15-15.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) 
+        COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_8d228.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8d228.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/15/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_8d228.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fPIE -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/ccE18fBV.s
+        GNU C++17 (Ubuntu 15.2.0-16ubuntu1) version 15.2.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/15"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/15/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/15/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/15/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/15
+         /usr/include/x86_64-linux-gnu/c++/15
+         /usr/include/c++/15/backward
+         /usr/lib/gcc/x86_64-linux-gnu/15/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: b661a74662ad7cf413c4193391ab5290
+        COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_8d228.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8d228.dir/'
+         /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_8d228.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccE18fBV.s
+        GNU assembler version 2.46 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.46
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_8d228.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8d228.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_8d228
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8d228.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 15.2.0-16ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-15/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust,cobol,algol68 --prefix=/usr --with-gcc-major-version-only --program-suffix=-15 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-15-j35TAX/gcc-15-15.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-15-j35TAX/gcc-15-15.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8d228' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8d228.'
+         /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjZh4Eq.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8d228 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_8d228.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 15.2.0
+        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjZh4Eq.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8d228 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_8d228.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.46
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8d228' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8d228.'
+        /usr/bin/c++ -v -Wl,-v CMakeFiles/cmTC_8d228.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_8d228
+        gmake[1]: Leaving directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-rGaMKk'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/usr/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/15]
+          add: [/usr/include/x86_64-linux-gnu/c++/15]
+          add: [/usr/include/c++/15/backward]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/15/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/15] ==> [/usr/include/c++/15]
+        collapse include dir [/usr/include/x86_64-linux-gnu/c++/15] ==> [/usr/include/x86_64-linux-gnu/c++/15]
+        collapse include dir [/usr/include/c++/15/backward] ==> [/usr/include/c++/15/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/15/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/15/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/15;/usr/include/x86_64-linux-gnu/c++/15;/usr/include/c++/15/backward;/usr/lib/gcc/x86_64-linux-gnu/15/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/usr/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-rGaMKk']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8d228/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_8d228.dir/build.make CMakeFiles/cmTC_8d228.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-rGaMKk']
+        ignore line: [Building CXX object CMakeFiles/cmTC_8d228.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -fPIE   -v -o CMakeFiles/cmTC_8d228.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 15.2.0-16ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-15/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust cobol algol68 --prefix=/usr --with-gcc-major-version-only --program-suffix=-15 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-15-j35TAX/gcc-15-15.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-15-j35TAX/gcc-15-15.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_8d228.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8d228.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_8d228.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fPIE -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/ccE18fBV.s]
+        ignore line: [GNU C++17 (Ubuntu 15.2.0-16ubuntu1) version 15.2.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/15"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/15/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/15/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/15/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/15]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/15]
+        ignore line: [ /usr/include/c++/15/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/15/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: b661a74662ad7cf413c4193391ab5290]
+        ignore line: [COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_8d228.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8d228.dir/']
+        ignore line: [ /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_8d228.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccE18fBV.s]
+        ignore line: [GNU assembler version 2.46 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.46]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_8d228.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8d228.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_8d228]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8d228.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 15.2.0-16ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-15/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust cobol algol68 --prefix=/usr --with-gcc-major-version-only --program-suffix=-15 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-15-j35TAX/gcc-15-15.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-15-j35TAX/gcc-15-15.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8d228' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8d228.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjZh4Eq.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8d228 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_8d228.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/15/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccjZh4Eq.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_8d228] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/15] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/15]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/15/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../..]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_8d228.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 15.2.0]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjZh4Eq.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8d228 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_8d228.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/15] ==> [/usr/lib/gcc/x86_64-linux-gnu/15]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../..] ==> [/usr/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/15;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/usr/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.46
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-flqFmq"
+      binary: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-flqFmq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/CMakeModules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-flqFmq'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f97ea/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f97ea.dir/build.make CMakeFiles/cmTC_f97ea.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-flqFmq'
+        Building C object CMakeFiles/cmTC_f97ea.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -fPIE   -v -o CMakeFiles/cmTC_f97ea.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 15.2.0-16ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-15/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust,cobol,algol68 --prefix=/usr --with-gcc-major-version-only --program-suffix=-15 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-15-j35TAX/gcc-15-15.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-15-j35TAX/gcc-15-15.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) 
+        COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_f97ea.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f97ea.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/15/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_f97ea.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fPIE -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/ccbXPKwl.s
+        GNU C23 (Ubuntu 15.2.0-16ubuntu1) version 15.2.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/15/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/15/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/15/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/15/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: edd70396dcc669433a92073f97309866
+        COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_f97ea.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f97ea.dir/'
+         /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_f97ea.dir/CMakeCCompilerABI.c.o /tmp/ccbXPKwl.s
+        GNU assembler version 2.46 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.46
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_f97ea.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f97ea.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_f97ea
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f97ea.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 15.2.0-16ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-15/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust,cobol,algol68 --prefix=/usr --with-gcc-major-version-only --program-suffix=-15 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-15-j35TAX/gcc-15-15.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-15-j35TAX/gcc-15-15.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f97ea' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f97ea.'
+         /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2kcfeu.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_f97ea /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_f97ea.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 15.2.0
+        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2kcfeu.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_f97ea /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_f97ea.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.46
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f97ea' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f97ea.'
+        /usr/bin/cc -v -Wl,-v CMakeFiles/cmTC_f97ea.dir/CMakeCCompilerABI.c.o -o cmTC_f97ea
+        gmake[1]: Leaving directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-flqFmq'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/usr/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/15/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/15/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/15/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/15/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/usr/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-flqFmq']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f97ea/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_f97ea.dir/build.make CMakeFiles/cmTC_f97ea.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-flqFmq']
+        ignore line: [Building C object CMakeFiles/cmTC_f97ea.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -fPIE   -v -o CMakeFiles/cmTC_f97ea.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 15.2.0-16ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-15/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust cobol algol68 --prefix=/usr --with-gcc-major-version-only --program-suffix=-15 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-15-j35TAX/gcc-15-15.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-15-j35TAX/gcc-15-15.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_f97ea.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f97ea.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_f97ea.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fPIE -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/ccbXPKwl.s]
+        ignore line: [GNU C23 (Ubuntu 15.2.0-16ubuntu1) version 15.2.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/15/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/15/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/15/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/15/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: edd70396dcc669433a92073f97309866]
+        ignore line: [COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_f97ea.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f97ea.dir/']
+        ignore line: [ /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_f97ea.dir/CMakeCCompilerABI.c.o /tmp/ccbXPKwl.s]
+        ignore line: [GNU assembler version 2.46 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.46]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_f97ea.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f97ea.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_f97ea]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f97ea.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 15.2.0-16ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-15/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust cobol algol68 --prefix=/usr --with-gcc-major-version-only --program-suffix=-15 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-15-j35TAX/gcc-15-15.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-15-j35TAX/gcc-15-15.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f97ea' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f97ea.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2kcfeu.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_f97ea /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_f97ea.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/15/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc2kcfeu.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_f97ea] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/15] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/15]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/15/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../..]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_f97ea.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 15.2.0]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2kcfeu.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_f97ea /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_f97ea.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/15] ==> [/usr/lib/gcc/x86_64-linux-gnu/15]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../..] ==> [/usr/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/15;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/usr/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.46
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckCXXSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "CMakeModules/AppendCompilerFlags.cmake:32 (check_cxx_source_compiles)"
+      - "CMakeLists.txt:47 (append_cxx_compiler_flags)"
+    checks:
+      - "Performing Test HAVE_GCC_STD=C__11__WALL__WEXTRA__DNDEBUG"
+    directories:
+      source: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-VdsNEG"
+      binary: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-VdsNEG"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/CMakeModules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_GCC_STD=C__11__WALL__WEXTRA__DNDEBUG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-VdsNEG'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_68821/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_68821.dir/build.make CMakeFiles/cmTC_68821.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-VdsNEG'
+        Building CXX object CMakeFiles/cmTC_68821.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_GCC_STD=C__11__WALL__WEXTRA__DNDEBUG  -std=c++11 -Wall -Wextra -DNDEBUG -fPIE -o CMakeFiles/cmTC_68821.dir/src.cxx.o -c /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-VdsNEG/src.cxx
+        Linking CXX executable cmTC_68821
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68821.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++11 -Wall -Wextra -DNDEBUG CMakeFiles/cmTC_68821.dir/src.cxx.o -o cmTC_68821
+        gmake[1]: Leaving directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-VdsNEG'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckCXXSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "CMakeModules/AppendCompilerFlags.cmake:32 (check_cxx_source_compiles)"
+      - "CMakeLists.txt:48 (append_cxx_compiler_flags)"
+    checks:
+      - "Performing Test HAVE_GCC_O3__FFAST_MATH__FUNROLL_LOOPS"
+    directories:
+      source: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-mTFOgT"
+      binary: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-mTFOgT"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++11 -Wall -Wextra -DNDEBUG"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/CMakeModules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_GCC_O3__FFAST_MATH__FUNROLL_LOOPS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-mTFOgT'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0f4b3/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0f4b3.dir/build.make CMakeFiles/cmTC_0f4b3.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-mTFOgT'
+        Building CXX object CMakeFiles/cmTC_0f4b3.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_GCC_O3__FFAST_MATH__FUNROLL_LOOPS  -std=c++11 -Wall -Wextra -DNDEBUG -O3 -ffast-math -funroll-loops -fPIE -o CMakeFiles/cmTC_0f4b3.dir/src.cxx.o -c /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-mTFOgT/src.cxx
+        Linking CXX executable cmTC_0f4b3
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0f4b3.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++11 -Wall -Wextra -DNDEBUG -O3 -ffast-math -funroll-loops CMakeFiles/cmTC_0f4b3.dir/src.cxx.o -o cmTC_0f4b3
+        gmake[1]: Leaving directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-mTFOgT'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "CMakeLists.txt:76 (try_compile)"
+    directories:
+      source: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeTmp"
+      binary: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++11 -Wall -Wextra -DNDEBUG"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/CMakeModules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "MODE_TI"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ff42a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ff42a.dir/build.make CMakeFiles/cmTC_ff42a.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_ff42a.dir/check_mode_ti.cpp.o
+        /usr/bin/c++   -std=c++11 -Wall -Wextra -DNDEBUG  -fPIE -o CMakeFiles/cmTC_ff42a.dir/check_mode_ti.cpp.o -c /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/CMakeModules/check_mode_ti.cpp
+        Linking CXX executable cmTC_ff42a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ff42a.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++11 -Wall -Wextra -DNDEBUG  CMakeFiles/cmTC_ff42a.dir/check_mode_ti.cpp.o -o cmTC_ff42a
+        gmake[1]: Leaving directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckCXXSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "CMakeModules/AppendCompilerFlags.cmake:32 (check_cxx_source_compiles)"
+      - "CMakeLists.txt:88 (append_cxx_compiler_flags)"
+    checks:
+      - "Performing Test HAVE_GCC_MSSE4.2__MARCH=NATIVE"
+    directories:
+      source: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-Gl0Js7"
+      binary: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-Gl0Js7"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++11 -Wall -Wextra -DNDEBUG"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/CMakeModules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_GCC_MSSE4.2__MARCH=NATIVE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-Gl0Js7'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e72be/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e72be.dir/build.make CMakeFiles/cmTC_e72be.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-Gl0Js7'
+        Building CXX object CMakeFiles/cmTC_e72be.dir/src.cxx.o
+        /usr/bin/c++   -std=c++11 -Wall -Wextra -DNDEBUG -msse4.2 -march=native -fPIE   -DHAVE_GCC_MSSE4.2__MARCH=NATIVE -o CMakeFiles/cmTC_e72be.dir/src.cxx.o -c /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-Gl0Js7/src.cxx
+        <command-line>: warning: ISO C++11 requires whitespace after the macro name
+        Linking CXX executable cmTC_e72be
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e72be.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++11 -Wall -Wextra -DNDEBUG -msse4.2 -march=native CMakeFiles/cmTC_e72be.dir/src.cxx.o -o cmTC_e72be
+        gmake[1]: Leaving directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-Gl0Js7'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckCXXSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "CMakeModules/AppendCompilerFlags.cmake:32 (check_cxx_source_compiles)"
+      - "CMakeLists.txt:91 (append_cxx_compiler_flags)"
+    checks:
+      - "Performing Test HAVE_CLANG_MSSE4.2__MARCH=NATIVE"
+    directories:
+      source: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-GIe0gR"
+      binary: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-GIe0gR"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++11 -Wall -Wextra -DNDEBUG"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/CMakeModules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_CLANG_MSSE4.2__MARCH=NATIVE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-GIe0gR'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_449be/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_449be.dir/build.make CMakeFiles/cmTC_449be.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-GIe0gR'
+        Building CXX object CMakeFiles/cmTC_449be.dir/src.cxx.o
+        /usr/bin/c++   -std=c++11 -Wall -Wextra -DNDEBUG -msse4.2 -march=native -fPIE   -DHAVE_CLANG_MSSE4.2__MARCH=NATIVE -o CMakeFiles/cmTC_449be.dir/src.cxx.o -c /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-GIe0gR/src.cxx
+        <command-line>: warning: ISO C++11 requires whitespace after the macro name
+        Linking CXX executable cmTC_449be
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_449be.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++11 -Wall -Wextra -DNDEBUG -msse4.2 -march=native CMakeFiles/cmTC_449be.dir/src.cxx.o -o cmTC_449be
+        gmake[1]: Leaving directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-GIe0gR'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckCXXSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "CMakeModules/FindCxaDemangle.cmake:11 (CHECK_CXX_SOURCE_COMPILES)"
+      - "CMakeLists.txt:99 (include)"
+    checks:
+      - "Performing Test HAVE_CXA_DEMANGLE"
+    directories:
+      source: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-foSyak"
+      binary: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-foSyak"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++11 -Wall -Wextra -DNDEBUG"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/CMakeModules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_CXA_DEMANGLE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-foSyak'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_24f5f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_24f5f.dir/build.make CMakeFiles/cmTC_24f5f.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-foSyak'
+        Building CXX object CMakeFiles/cmTC_24f5f.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXA_DEMANGLE  -std=c++11 -Wall -Wextra -DNDEBUG  -fPIE -o CMakeFiles/cmTC_24f5f.dir/src.cxx.o -c /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-foSyak/src.cxx
+        /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-foSyak/src.cxx: In function ‘int main()’:
+        /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-foSyak/src.cxx:6:11: warning: unused variable ‘demangled’ [-Wunused-variable]
+            6 |     char *demangled = abi::__cxa_demangle( foo, 0, 0, &status );
+              |           ^~~~~~~~~
+        Linking CXX executable cmTC_24f5f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24f5f.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++11 -Wall -Wextra -DNDEBUG  CMakeFiles/cmTC_24f5f.dir/src.cxx.o -o cmTC_24f5f
+        gmake[1]: Leaving directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-foSyak'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckCXXSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "CMakeModules/AppendCompilerFlags.cmake:32 (check_cxx_source_compiles)"
+      - "CMakeLists.txt:103 (append_cxx_compiler_flags)"
+    checks:
+      - "Performing Test HAVE_GCC_DHAVE_CXA_DEMANGLE"
+    directories:
+      source: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-UcoqwK"
+      binary: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-UcoqwK"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++11 -Wall -Wextra -DNDEBUG"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/CMakeModules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_GCC_DHAVE_CXA_DEMANGLE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-UcoqwK'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0dddd/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0dddd.dir/build.make CMakeFiles/cmTC_0dddd.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-UcoqwK'
+        Building CXX object CMakeFiles/cmTC_0dddd.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_GCC_DHAVE_CXA_DEMANGLE  -std=c++11 -Wall -Wextra -DNDEBUG -DHAVE_CXA_DEMANGLE -fPIE -o CMakeFiles/cmTC_0dddd.dir/src.cxx.o -c /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-UcoqwK/src.cxx
+        Linking CXX executable cmTC_0dddd
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0dddd.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++11 -Wall -Wextra -DNDEBUG -DHAVE_CXA_DEMANGLE CMakeFiles/cmTC_0dddd.dir/src.cxx.o -o cmTC_0dddd
+        gmake[1]: Leaving directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-UcoqwK'
+        
+      exitCode: 0
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/FindGit.cmake:111 (find_program)"
+      - "CMakeLists.txt:114 (find_package)"
+    mode: "program"
+    variable: "GIT_EXECUTABLE"
+    description: "Git command line client"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "git"
+    candidate_directories:
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/"
+      - "/usr/bin/"
+      - "/usr/sbin/"
+      - "/usr/"
+      - "/bin/"
+      - "/sbin/"
+      - "/usr/X11R6/bin/"
+      - "/usr/X11R6/sbin/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/bin/"
+      - "/usr/pkg/sbin/"
+      - "/usr/pkg/"
+      - "/opt/bin/"
+      - "/opt/sbin/"
+      - "/opt/"
+    searched_directories:
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/git"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/git"
+      - "/usr/local/sbin/git"
+      - "/usr/local/bin/git"
+      - "/usr/sbin/git"
+    found: "/usr/bin/git"
+    search_context:
+      ENV{PATH}:
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "external/libdivsufsort/CMakeModules/AppendCompilerFlags.cmake:14 (check_c_source_compiles)"
+      - "external/libdivsufsort/CMakeLists.txt:74 (append_c_compiler_flags)"
+    checks:
+      - "Performing Test HAVE_GCC_WALL"
+    directories:
+      source: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-GVNWw4"
+      binary: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-GVNWw4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/external/libdivsufsort/CMakeModules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_GCC_WALL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-GVNWw4'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3538e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3538e.dir/build.make CMakeFiles/cmTC_3538e.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-GVNWw4'
+        Building C object CMakeFiles/cmTC_3538e.dir/src.c.o
+        /usr/bin/cc -DHAVE_GCC_WALL  -Wall -fPIE -o CMakeFiles/cmTC_3538e.dir/src.c.o -c /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-GVNWw4/src.c
+        Linking C executable cmTC_3538e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3538e.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall CMakeFiles/cmTC_3538e.dir/src.c.o -o cmTC_3538e
+        gmake[1]: Leaving directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-GVNWw4'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "external/libdivsufsort/CMakeModules/AppendCompilerFlags.cmake:14 (check_c_source_compiles)"
+      - "external/libdivsufsort/CMakeLists.txt:75 (append_c_compiler_flags)"
+    checks:
+      - "Performing Test HAVE_GCC_FOMIT_FRAME_POINTER"
+    directories:
+      source: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-Q0NwL8"
+      binary: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-Q0NwL8"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/external/libdivsufsort/CMakeModules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_GCC_FOMIT_FRAME_POINTER"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-Q0NwL8'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1305d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1305d.dir/build.make CMakeFiles/cmTC_1305d.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-Q0NwL8'
+        Building C object CMakeFiles/cmTC_1305d.dir/src.c.o
+        /usr/bin/cc -DHAVE_GCC_FOMIT_FRAME_POINTER  -Wall -fomit-frame-pointer -fPIE -o CMakeFiles/cmTC_1305d.dir/src.c.o -c /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-Q0NwL8/src.c
+        Linking C executable cmTC_1305d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1305d.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall -fomit-frame-pointer CMakeFiles/cmTC_1305d.dir/src.c.o -o cmTC_1305d
+        gmake[1]: Leaving directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-Q0NwL8'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIncludeFile.cmake:174 (try_compile)"
+      - "external/libdivsufsort/include/CMakeLists.txt:9 (check_include_file)"
+    checks:
+      - "Looking for inttypes.h"
+    directories:
+      source: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-6LS45i"
+      binary: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-6LS45i"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/external/libdivsufsort/CMakeModules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_INTTYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-6LS45i'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_01df7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_01df7.dir/build.make CMakeFiles/cmTC_01df7.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-6LS45i'
+        Building C object CMakeFiles/cmTC_01df7.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -Wall  -fPIE -o CMakeFiles/cmTC_01df7.dir/CheckIncludeFile.c.o -c /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-6LS45i/CheckIncludeFile.c
+        Linking C executable cmTC_01df7
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_01df7.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  CMakeFiles/cmTC_01df7.dir/CheckIncludeFile.c.o -o cmTC_01df7
+        gmake[1]: Leaving directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-6LS45i'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIncludeFile.cmake:174 (try_compile)"
+      - "external/libdivsufsort/include/CMakeLists.txt:10 (check_include_file)"
+    checks:
+      - "Looking for memory.h"
+    directories:
+      source: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-TUNDnp"
+      binary: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-TUNDnp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/external/libdivsufsort/CMakeModules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_MEMORY_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-TUNDnp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_554de/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_554de.dir/build.make CMakeFiles/cmTC_554de.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-TUNDnp'
+        Building C object CMakeFiles/cmTC_554de.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -Wall  -fPIE -o CMakeFiles/cmTC_554de.dir/CheckIncludeFile.c.o -c /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-TUNDnp/CheckIncludeFile.c
+        Linking C executable cmTC_554de
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_554de.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  CMakeFiles/cmTC_554de.dir/CheckIncludeFile.c.o -o cmTC_554de
+        gmake[1]: Leaving directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-TUNDnp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIncludeFile.cmake:174 (try_compile)"
+      - "external/libdivsufsort/include/CMakeLists.txt:11 (check_include_file)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-84zkVQ"
+      binary: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-84zkVQ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/external/libdivsufsort/CMakeModules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-84zkVQ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8f7a6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8f7a6.dir/build.make CMakeFiles/cmTC_8f7a6.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-84zkVQ'
+        Building C object CMakeFiles/cmTC_8f7a6.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -Wall  -fPIE -o CMakeFiles/cmTC_8f7a6.dir/CheckIncludeFile.c.o -c /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-84zkVQ/CheckIncludeFile.c
+        Linking C executable cmTC_8f7a6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f7a6.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  CMakeFiles/cmTC_8f7a6.dir/CheckIncludeFile.c.o -o cmTC_8f7a6
+        gmake[1]: Leaving directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-84zkVQ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIncludeFile.cmake:174 (try_compile)"
+      - "external/libdivsufsort/include/CMakeLists.txt:12 (check_include_file)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-7Epd1A"
+      binary: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-7Epd1A"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/external/libdivsufsort/CMakeModules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-7Epd1A'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ea604/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ea604.dir/build.make CMakeFiles/cmTC_ea604.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-7Epd1A'
+        Building C object CMakeFiles/cmTC_ea604.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -Wall  -fPIE -o CMakeFiles/cmTC_ea604.dir/CheckIncludeFile.c.o -c /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-7Epd1A/CheckIncludeFile.c
+        Linking C executable cmTC_ea604
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea604.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  CMakeFiles/cmTC_ea604.dir/CheckIncludeFile.c.o -o cmTC_ea604
+        gmake[1]: Leaving directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-7Epd1A'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIncludeFile.cmake:174 (try_compile)"
+      - "external/libdivsufsort/include/CMakeLists.txt:13 (check_include_file)"
+    checks:
+      - "Looking for stdlib.h"
+    directories:
+      source: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-6I3JvK"
+      binary: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-6I3JvK"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/external/libdivsufsort/CMakeModules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STDLIB_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-6I3JvK'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d2038/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d2038.dir/build.make CMakeFiles/cmTC_d2038.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-6I3JvK'
+        Building C object CMakeFiles/cmTC_d2038.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -Wall  -fPIE -o CMakeFiles/cmTC_d2038.dir/CheckIncludeFile.c.o -c /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-6I3JvK/CheckIncludeFile.c
+        Linking C executable cmTC_d2038
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2038.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  CMakeFiles/cmTC_d2038.dir/CheckIncludeFile.c.o -o cmTC_d2038
+        gmake[1]: Leaving directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-6I3JvK'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIncludeFile.cmake:174 (try_compile)"
+      - "external/libdivsufsort/include/CMakeLists.txt:14 (check_include_file)"
+    checks:
+      - "Looking for string.h"
+    directories:
+      source: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-5xcyKF"
+      binary: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-5xcyKF"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/external/libdivsufsort/CMakeModules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STRING_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-5xcyKF'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a1b50/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a1b50.dir/build.make CMakeFiles/cmTC_a1b50.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-5xcyKF'
+        Building C object CMakeFiles/cmTC_a1b50.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -Wall  -fPIE -o CMakeFiles/cmTC_a1b50.dir/CheckIncludeFile.c.o -c /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-5xcyKF/CheckIncludeFile.c
+        Linking C executable cmTC_a1b50
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1b50.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  CMakeFiles/cmTC_a1b50.dir/CheckIncludeFile.c.o -o cmTC_a1b50
+        gmake[1]: Leaving directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-5xcyKF'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIncludeFile.cmake:174 (try_compile)"
+      - "external/libdivsufsort/include/CMakeLists.txt:15 (check_include_file)"
+    checks:
+      - "Looking for strings.h"
+    directories:
+      source: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-Nq3Mv6"
+      binary: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-Nq3Mv6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/external/libdivsufsort/CMakeModules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STRINGS_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-Nq3Mv6'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_72083/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_72083.dir/build.make CMakeFiles/cmTC_72083.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-Nq3Mv6'
+        Building C object CMakeFiles/cmTC_72083.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -Wall  -fPIE -o CMakeFiles/cmTC_72083.dir/CheckIncludeFile.c.o -c /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-Nq3Mv6/CheckIncludeFile.c
+        Linking C executable cmTC_72083
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_72083.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  CMakeFiles/cmTC_72083.dir/CheckIncludeFile.c.o -o cmTC_72083
+        gmake[1]: Leaving directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-Nq3Mv6'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIncludeFile.cmake:174 (try_compile)"
+      - "external/libdivsufsort/include/CMakeLists.txt:16 (check_include_file)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-X8ROY1"
+      binary: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-X8ROY1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/external/libdivsufsort/CMakeModules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-X8ROY1'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_71b57/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_71b57.dir/build.make CMakeFiles/cmTC_71b57.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-X8ROY1'
+        Building C object CMakeFiles/cmTC_71b57.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -Wall  -fPIE -o CMakeFiles/cmTC_71b57.dir/CheckIncludeFile.c.o -c /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-X8ROY1/CheckIncludeFile.c
+        Linking C executable cmTC_71b57
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_71b57.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  CMakeFiles/cmTC_71b57.dir/CheckIncludeFile.c.o -o cmTC_71b57
+        gmake[1]: Leaving directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-X8ROY1'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "external/libdivsufsort/CMakeModules/CheckFunctionKeywords.cmake:9 (check_c_source_compiles)"
+      - "external/libdivsufsort/include/CMakeLists.txt:46 (check_function_keywords)"
+    checks:
+      - "Performing Test HAVE_INLINE"
+    directories:
+      source: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-L38fFv"
+      binary: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-L38fFv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/external/libdivsufsort/CMakeModules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_INLINE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-L38fFv'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_57e2d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_57e2d.dir/build.make CMakeFiles/cmTC_57e2d.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-L38fFv'
+        Building C object CMakeFiles/cmTC_57e2d.dir/src.c.o
+        /usr/bin/cc -DHAVE_INLINE  -Wall  -fPIE -o CMakeFiles/cmTC_57e2d.dir/src.c.o -c /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-L38fFv/src.c
+        Linking C executable cmTC_57e2d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57e2d.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  CMakeFiles/cmTC_57e2d.dir/src.c.o -o cmTC_57e2d
+        gmake[1]: Leaving directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-L38fFv'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "external/libdivsufsort/CMakeModules/CheckFunctionKeywords.cmake:9 (check_c_source_compiles)"
+      - "external/libdivsufsort/include/CMakeLists.txt:46 (check_function_keywords)"
+    checks:
+      - "Performing Test HAVE___INLINE"
+    directories:
+      source: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-XB6Gpj"
+      binary: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-XB6Gpj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/external/libdivsufsort/CMakeModules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE___INLINE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-XB6Gpj'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_74663/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_74663.dir/build.make CMakeFiles/cmTC_74663.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-XB6Gpj'
+        Building C object CMakeFiles/cmTC_74663.dir/src.c.o
+        /usr/bin/cc -DHAVE___INLINE  -Wall  -fPIE -o CMakeFiles/cmTC_74663.dir/src.c.o -c /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-XB6Gpj/src.c
+        Linking C executable cmTC_74663
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74663.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  CMakeFiles/cmTC_74663.dir/src.c.o -o cmTC_74663
+        gmake[1]: Leaving directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-XB6Gpj'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "external/libdivsufsort/CMakeModules/CheckFunctionKeywords.cmake:9 (check_c_source_compiles)"
+      - "external/libdivsufsort/include/CMakeLists.txt:46 (check_function_keywords)"
+    checks:
+      - "Performing Test HAVE___INLINE__"
+    directories:
+      source: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-idkKTH"
+      binary: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-idkKTH"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/external/libdivsufsort/CMakeModules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE___INLINE__"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-idkKTH'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f06dd/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f06dd.dir/build.make CMakeFiles/cmTC_f06dd.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-idkKTH'
+        Building C object CMakeFiles/cmTC_f06dd.dir/src.c.o
+        /usr/bin/cc -DHAVE___INLINE__  -Wall  -fPIE -o CMakeFiles/cmTC_f06dd.dir/src.c.o -c /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-idkKTH/src.c
+        Linking C executable cmTC_f06dd
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f06dd.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  CMakeFiles/cmTC_f06dd.dir/src.c.o -o cmTC_f06dd
+        gmake[1]: Leaving directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-idkKTH'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "external/libdivsufsort/CMakeModules/CheckFunctionKeywords.cmake:9 (check_c_source_compiles)"
+      - "external/libdivsufsort/include/CMakeLists.txt:46 (check_function_keywords)"
+    checks:
+      - "Performing Test HAVE___DECLSPEC_DLLEXPORT_"
+    directories:
+      source: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-CmYi0X"
+      binary: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-CmYi0X"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/external/libdivsufsort/CMakeModules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE___DECLSPEC_DLLEXPORT_"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-CmYi0X'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4737e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4737e.dir/build.make CMakeFiles/cmTC_4737e.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-CmYi0X'
+        Building C object CMakeFiles/cmTC_4737e.dir/src.c.o
+        /usr/bin/cc -DHAVE___DECLSPEC_DLLEXPORT_  -Wall  -fPIE -o CMakeFiles/cmTC_4737e.dir/src.c.o -c /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-CmYi0X/src.c
+        /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-CmYi0X/src.c:1:1: error: return type defaults to ‘int’ [-Wimplicit-int]
+            1 | __declspec(dllexport) void func(); void func() { } int main() { func(); return 0; }
+              | ^~~~~~~~~~
+        /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-CmYi0X/src.c: In function ‘__declspec’:
+        /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-CmYi0X/src.c:1:48: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+            1 | __declspec(dllexport) void func(); void func() { } int main() { func(); return 0; }
+              |                                                ^
+        /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-CmYi0X/src.c:1:63: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+            1 | __declspec(dllexport) void func(); void func() { } int main() { func(); return 0; }
+              |                                                               ^
+        /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-CmYi0X/src.c:1:1: warning: old-style function definition [-Wold-style-definition]
+            1 | __declspec(dllexport) void func(); void func() { } int main() { func(); return 0; }
+              | ^~~~~~~~~~
+        /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-CmYi0X/src.c:1:1: error: type of ‘dllexport’ defaults to ‘int’ [-Wimplicit-int]
+        /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-CmYi0X/src.c:1:28: error: declaration for parameter ‘func’ but no such parameter
+            1 | __declspec(dllexport) void func(); void func() { } int main() { func(); return 0; }
+              |                            ^~~~
+        /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-CmYi0X/src.c:2: error: expected ‘{’ at end of input
+        /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-CmYi0X/src.c:2: warning: control reaches end of non-void function [-Wreturn-type]
+        gmake[1]: *** [CMakeFiles/cmTC_4737e.dir/build.make:81: CMakeFiles/cmTC_4737e.dir/src.c.o] Error 1
+        gmake[1]: Leaving directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-CmYi0X'
+        gmake: *** [Makefile:134: cmTC_4737e/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "external/libdivsufsort/CMakeModules/CheckFunctionKeywords.cmake:9 (check_c_source_compiles)"
+      - "external/libdivsufsort/include/CMakeLists.txt:46 (check_function_keywords)"
+    checks:
+      - "Performing Test HAVE___DECLSPEC_DLLIMPORT_"
+    directories:
+      source: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-yuypDk"
+      binary: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-yuypDk"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/external/libdivsufsort/CMakeModules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE___DECLSPEC_DLLIMPORT_"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-yuypDk'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_dfae8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_dfae8.dir/build.make CMakeFiles/cmTC_dfae8.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-yuypDk'
+        Building C object CMakeFiles/cmTC_dfae8.dir/src.c.o
+        /usr/bin/cc -DHAVE___DECLSPEC_DLLIMPORT_  -Wall  -fPIE -o CMakeFiles/cmTC_dfae8.dir/src.c.o -c /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-yuypDk/src.c
+        /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-yuypDk/src.c:1:1: error: return type defaults to ‘int’ [-Wimplicit-int]
+            1 | __declspec(dllimport) void func(); void func() { } int main() { func(); return 0; }
+              | ^~~~~~~~~~
+        /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-yuypDk/src.c: In function ‘__declspec’:
+        /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-yuypDk/src.c:1:48: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+            1 | __declspec(dllimport) void func(); void func() { } int main() { func(); return 0; }
+              |                                                ^
+        /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-yuypDk/src.c:1:63: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+            1 | __declspec(dllimport) void func(); void func() { } int main() { func(); return 0; }
+              |                                                               ^
+        /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-yuypDk/src.c:1:1: warning: old-style function definition [-Wold-style-definition]
+            1 | __declspec(dllimport) void func(); void func() { } int main() { func(); return 0; }
+              | ^~~~~~~~~~
+        /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-yuypDk/src.c:1:1: error: type of ‘dllimport’ defaults to ‘int’ [-Wimplicit-int]
+        /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-yuypDk/src.c:1:28: error: declaration for parameter ‘func’ but no such parameter
+            1 | __declspec(dllimport) void func(); void func() { } int main() { func(); return 0; }
+              |                            ^~~~
+        /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-yuypDk/src.c:2: error: expected ‘{’ at end of input
+        /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-yuypDk/src.c:2: warning: control reaches end of non-void function [-Wreturn-type]
+        gmake[1]: *** [CMakeFiles/cmTC_dfae8.dir/build.make:81: CMakeFiles/cmTC_dfae8.dir/src.c.o] Error 1
+        gmake[1]: Leaving directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-yuypDk'
+        gmake: *** [Makefile:134: cmTC_dfae8/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckTypeSize.cmake:348 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckTypeSize.cmake:481 (__check_type_size_impl)"
+      - "external/libdivsufsort/include/CMakeLists.txt:60 (check_type_size)"
+    checks:
+      - "Check size of uint8_t"
+    directories:
+      source: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-4f5XTF"
+      binary: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-4f5XTF"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/external/libdivsufsort/CMakeModules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_UINT8_T"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-4f5XTF'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_113ac/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_113ac.dir/build.make CMakeFiles/cmTC_113ac.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-4f5XTF'
+        Building C object CMakeFiles/cmTC_113ac.dir/UINT8_T.c.o
+        /usr/bin/cc   -Wall  -fPIE -o CMakeFiles/cmTC_113ac.dir/UINT8_T.c.o -c /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-4f5XTF/UINT8_T.c
+        Linking C executable cmTC_113ac
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_113ac.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  CMakeFiles/cmTC_113ac.dir/UINT8_T.c.o -o cmTC_113ac
+        gmake[1]: Leaving directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-4f5XTF'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckTypeSize.cmake:348 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckTypeSize.cmake:481 (__check_type_size_impl)"
+      - "external/libdivsufsort/include/CMakeLists.txt:72 (check_type_size)"
+    checks:
+      - "Check size of int32_t"
+    directories:
+      source: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-Z9g8qh"
+      binary: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-Z9g8qh"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/external/libdivsufsort/CMakeModules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_INT32_T"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-Z9g8qh'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_86e95/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_86e95.dir/build.make CMakeFiles/cmTC_86e95.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-Z9g8qh'
+        Building C object CMakeFiles/cmTC_86e95.dir/INT32_T.c.o
+        /usr/bin/cc   -Wall  -fPIE -o CMakeFiles/cmTC_86e95.dir/INT32_T.c.o -c /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-Z9g8qh/INT32_T.c
+        Linking C executable cmTC_86e95
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86e95.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  CMakeFiles/cmTC_86e95.dir/INT32_T.c.o -o cmTC_86e95
+        gmake[1]: Leaving directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-Z9g8qh'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckSymbolExists.cmake:193 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckSymbolExists.cmake:98 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "external/libdivsufsort/include/CMakeLists.txt:75 (check_symbol_exists)"
+    checks:
+      - "Looking for PRId32"
+    directories:
+      source: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-XtyM83"
+      binary: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-XtyM83"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/external/libdivsufsort/CMakeModules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_PRID32"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-XtyM83'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_dd357/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_dd357.dir/build.make CMakeFiles/cmTC_dd357.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-XtyM83'
+        Building C object CMakeFiles/cmTC_dd357.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -Wall  -fPIE -o CMakeFiles/cmTC_dd357.dir/CheckSymbolExists.c.o -c /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-XtyM83/CheckSymbolExists.c
+        Linking C executable cmTC_dd357
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd357.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  CMakeFiles/cmTC_dd357.dir/CheckSymbolExists.c.o -o cmTC_dd357
+        gmake[1]: Leaving directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-XtyM83'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckTypeSize.cmake:348 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckTypeSize.cmake:481 (__check_type_size_impl)"
+      - "external/libdivsufsort/include/CMakeLists.txt:104 (check_type_size)"
+    checks:
+      - "Check size of int64_t"
+    directories:
+      source: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-O6nb8V"
+      binary: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-O6nb8V"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/external/libdivsufsort/CMakeModules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_INT64_T"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-O6nb8V'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_be70f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_be70f.dir/build.make CMakeFiles/cmTC_be70f.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-O6nb8V'
+        Building C object CMakeFiles/cmTC_be70f.dir/INT64_T.c.o
+        /usr/bin/cc   -Wall  -fPIE -o CMakeFiles/cmTC_be70f.dir/INT64_T.c.o -c /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-O6nb8V/INT64_T.c
+        Linking C executable cmTC_be70f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_be70f.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  CMakeFiles/cmTC_be70f.dir/INT64_T.c.o -o cmTC_be70f
+        gmake[1]: Leaving directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-O6nb8V'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckSymbolExists.cmake:193 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckSymbolExists.cmake:98 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "external/libdivsufsort/include/CMakeLists.txt:107 (check_symbol_exists)"
+    checks:
+      - "Looking for PRId64"
+    directories:
+      source: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-3xIEks"
+      binary: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-3xIEks"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/external/libdivsufsort/CMakeModules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_PRID64"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-3xIEks'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_07281/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_07281.dir/build.make CMakeFiles/cmTC_07281.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-3xIEks'
+        Building C object CMakeFiles/cmTC_07281.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -Wall  -fPIE -o CMakeFiles/cmTC_07281.dir/CheckSymbolExists.c.o -c /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-3xIEks/CheckSymbolExists.c
+        Linking C executable cmTC_07281
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07281.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  CMakeFiles/cmTC_07281.dir/CheckSymbolExists.c.o -o cmTC_07281
+        gmake[1]: Leaving directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-3xIEks'
+        
+      exitCode: 0
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "external/googletest/cmake/internal_utils.cmake:205 (find_package)"
+      - "external/googletest/CMakeLists.txt:50 (include)"
+    name: "PythonInterp"
+    configs:
+      -
+        filename: "PythonInterpConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "pythoninterp-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "PythonInterp"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/pkgRedirects/PythonInterpConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/pkgRedirects/pythoninterp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/PythonInterpConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/pythoninterp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/PythonInterpConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/pythoninterp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/PythonInterpConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/pythoninterp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/PythonInterpConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/pythoninterp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/PythonInterpConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/pythoninterp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/games/PythonInterpConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/games/pythoninterp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/games/PythonInterpConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/games/pythoninterp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/snap/PythonInterpConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/snap/pythoninterp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/PythonInterpConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/pythoninterp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found: null
+    search_context:
+      ENV{PATH}:
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_MODULE_PATH:
+        - "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/CMakeModules"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-4.2/Modules/FindThreads.cmake:160 (check_c_source_compiles)"
+      - "/usr/share/cmake-4.2/Modules/FindThreads.cmake:226 (_threads_check_libc)"
+      - "external/googletest/cmake/internal_utils.cmake:51 (find_package)"
+      - "external/googletest/CMakeLists.txt:52 (config_compiler_and_linker)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-rcBd9z"
+      binary: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-rcBd9z"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/CMakeModules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-rcBd9z'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_11248/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_11248.dir/build.make CMakeFiles/cmTC_11248.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-rcBd9z'
+        Building C object CMakeFiles/cmTC_11248.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -fPIE -o CMakeFiles/cmTC_11248.dir/src.c.o -c /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-rcBd9z/src.c
+        Linking C executable cmTC_11248
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_11248.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_11248.dir/src.c.o -o cmTC_11248
+        gmake[1]: Leaving directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-rcBd9z'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIncludeFileCXX.cmake:143 (try_compile)"
+      - "include/sdsl/CMakeLists.txt:6 (check_include_file_CXX)"
+    checks:
+      - "Looking for C++ include cstdio"
+    directories:
+      source: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-j1AXp3"
+      binary: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-j1AXp3"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++11 -Wall -Wextra -DNDEBUG"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/CMakeModules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STDIO"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-j1AXp3'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d0017/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d0017.dir/build.make CMakeFiles/cmTC_d0017.dir/build
+        gmake[1]: Entering directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-j1AXp3'
+        Building CXX object CMakeFiles/cmTC_d0017.dir/CheckIncludeFile.cxx.o
+        /usr/bin/c++   -std=c++11 -Wall -Wextra -DNDEBUG  -fPIE -o CMakeFiles/cmTC_d0017.dir/CheckIncludeFile.cxx.o -c /home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-j1AXp3/CheckIncludeFile.cxx
+        Linking CXX executable cmTC_d0017
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0017.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++11 -Wall -Wextra -DNDEBUG  CMakeFiles/cmTC_d0017.dir/CheckIncludeFile.cxx.o -o cmTC_d0017
+        gmake[1]: Leaving directory '/home/vboxuser/Documentos/prototipo_k2raster/k2-raster/external/sdsl-lite/build_fpic/CMakeFiles/CMakeScratch/TryCompile-j1AXp3'
+        
+      exitCode: 0
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/FindDoxygen.cmake:770 (find_program)"
+      - "/usr/share/cmake-4.2/Modules/FindDoxygen.cmake:955 (_Doxygen_find_doxygen)"
+      - "CMakeLists.txt:126 (find_package)"
+    mode: "program"
+    variable: "DOXYGEN_EXECUTABLE"
+    description: "Doxygen documentation generation tool (https://www.doxygen.nl)"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "doxygen"
+    candidate_directories:
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/"
+      - "/usr/bin/"
+      - "/usr/sbin/"
+      - "/usr/"
+      - "/bin/"
+      - "/sbin/"
+      - "/usr/X11R6/bin/"
+      - "/usr/X11R6/sbin/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/bin/"
+      - "/usr/pkg/sbin/"
+      - "/usr/pkg/"
+      - "/opt/bin/"
+      - "/opt/sbin/"
+      - "/opt/"
+      - "/Applications/Doxygen.app/Contents/Resources/"
+      - "/Applications/Doxygen.app/Contents/MacOS/"
+      - "/Applications/Utilities/Doxygen.app/Contents/Resources/"
+      - "/Applications/Utilities/Doxygen.app/Contents/MacOS/"
+    searched_directories:
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/doxygen"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/doxygen"
+      - "/usr/local/sbin/doxygen"
+      - "/usr/local/bin/doxygen"
+      - "/usr/sbin/doxygen"
+      - "/usr/bin/doxygen"
+      - "/sbin/doxygen"
+      - "/bin/doxygen"
+      - "/usr/games/doxygen"
+      - "/usr/local/games/doxygen"
+      - "/snap/bin/doxygen"
+      - "/usr/local/bin/doxygen"
+      - "/usr/local/sbin/doxygen"
+      - "/usr/local/doxygen"
+      - "/usr/bin/doxygen"
+      - "/usr/sbin/doxygen"
+      - "/usr/doxygen"
+      - "/bin/doxygen"
+      - "/sbin/doxygen"
+      - "/usr/X11R6/bin/doxygen"
+      - "/usr/X11R6/sbin/doxygen"
+      - "/usr/X11R6/doxygen"
+      - "/usr/pkg/bin/doxygen"
+      - "/usr/pkg/sbin/doxygen"
+      - "/usr/pkg/doxygen"
+      - "/opt/bin/doxygen"
+      - "/opt/sbin/doxygen"
+      - "/opt/doxygen"
+      - "/Applications/Doxygen.app/Contents/Resources/doxygen"
+      - "/Applications/Doxygen.app/Contents/MacOS/doxygen"
+      - "/Applications/Utilities/Doxygen.app/Contents/Resources/doxygen"
+      - "/Applications/Utilities/Doxygen.app/Contents/MacOS/doxygen"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/FindDoxygen.cmake:858 (find_program)"
+      - "/usr/share/cmake-4.2/Modules/FindDoxygen.cmake:959 (_Doxygen_find_dot)"
+      - "CMakeLists.txt:126 (find_package)"
+    mode: "program"
+    variable: "DOXYGEN_DOT_EXECUTABLE"
+    description: "Dot tool for use with Doxygen"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "dot"
+    candidate_directories:
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/"
+      - "/usr/bin/"
+      - "/usr/sbin/"
+      - "/usr/"
+      - "/bin/"
+      - "/sbin/"
+      - "/usr/X11R6/bin/"
+      - "/usr/X11R6/sbin/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/bin/"
+      - "/usr/pkg/sbin/"
+      - "/usr/pkg/"
+      - "/opt/bin/"
+      - "/opt/sbin/"
+      - "/opt/"
+      - "/ATT/Graphviz/bin/"
+      - "C:/Program Files/ATT/Graphviz/bin/"
+      - "/Applications/Graphviz.app/Contents/MacOS/"
+      - "/Applications/Utilities/Graphviz.app/Contents/MacOS/"
+      - "/Applications/Doxygen.app/Contents/Resources/"
+      - "/Applications/Doxygen.app/Contents/MacOS/"
+      - "/Applications/Utilities/Doxygen.app/Contents/Resources/"
+      - "/Applications/Utilities/Doxygen.app/Contents/MacOS/"
+    searched_directories:
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/dot"
+      - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/dot"
+      - "/usr/local/sbin/dot"
+      - "/usr/local/bin/dot"
+      - "/usr/sbin/dot"
+      - "/usr/bin/dot"
+      - "/sbin/dot"
+      - "/bin/dot"
+      - "/usr/games/dot"
+      - "/usr/local/games/dot"
+      - "/snap/bin/dot"
+      - "/usr/local/bin/dot"
+      - "/usr/local/sbin/dot"
+      - "/usr/local/dot"
+      - "/usr/bin/dot"
+      - "/usr/sbin/dot"
+      - "/usr/dot"
+      - "/bin/dot"
+      - "/sbin/dot"
+      - "/usr/X11R6/bin/dot"
+      - "/usr/X11R6/sbin/dot"
+      - "/usr/X11R6/dot"
+      - "/usr/pkg/bin/dot"
+      - "/usr/pkg/sbin/dot"
+      - "/usr/pkg/dot"
+      - "/opt/bin/dot"
+      - "/opt/sbin/dot"
+      - "/opt/dot"
+      - "/ATT/Graphviz/bin/dot"
+      - "C:/Program Files/ATT/Graphviz/bin/dot"
+      - "/Applications/Graphviz.app/Contents/MacOS/dot"
+      - "/Applications/Utilities/Graphviz.app/Contents/MacOS/dot"
+      - "/Applications/Doxygen.app/Contents/Resources/dot"
+      - "/Applications/Doxygen.app/Contents/MacOS/dot"
+      - "/Applications/Utilities/Doxygen.app/Contents/Resources/dot"
+      - "/Applications/Utilities/Doxygen.app/Contents/MacOS/dot"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/vboxuser/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+...
