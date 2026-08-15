@@ -6,6 +6,14 @@ namespace py = pybind11;
 
 // Exponemos la clase k2_raster
 PYBIND11_MODULE(k2raster_engine, m) {
+     // Enseñar a Python la estructura BloqueLOD
+    py::class_<k2raster::BloqueLOD>(m, "BloqueLOD")
+        .def_readonly("fila", &k2raster::BloqueLOD::fila)
+        .def_readonly("columna", &k2raster::BloqueLOD::columna)
+        .def_readonly("alto", &k2raster::BloqueLOD::alto)
+        .def_readonly("ancho", &k2raster::BloqueLOD::ancho)
+        .def_readonly("valor", &k2raster::BloqueLOD::valor);
+
     py::class_<k2raster::k2_raster<int>>(m, "K2Raster")
         .def(py::init<>())
         // Función para cargar el archivo .k2r desde Python
@@ -20,5 +28,6 @@ PYBIND11_MODULE(k2raster_engine, m) {
             std::vector<int> resultado;
             self.get_values_window_zoom(x_ini, x_fin, y_ini, y_fin, zoom, resultado);
             return resultado;
-        });
+        })
+        .def("get_blocks_window_zoom", &k2raster::k2_raster<int>::get_blocks_window_zoom, "Obtiene bloques con LOD");
 }

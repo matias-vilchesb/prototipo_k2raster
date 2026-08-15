@@ -42,6 +42,14 @@
 //! Namespace for the k2-raster library
 namespace k2raster {
 
+    //bloque nivel de detalle
+    struct BloqueLOD{
+        uint32_t fila;
+        uint32_t columna;
+        uint32_t alto;
+        uint32_t ancho;
+        int valor;
+    };
     template <typename t_value=int,
             typename t_bv=sdsl::bit_vector,
             typename t_rank=sdsl::rank_support_v5<1,1>,
@@ -2321,6 +2329,27 @@ namespace k2raster {
         //*******************************************************//
         //**************** ZOOM QUERIES *************************//
         //*******************************************************//
+        // bloque de detalle
+        std::vector<BloqueLOD> get_blocks_window_zoom(size_type xini, size_type xend, size_type yini, size_type yend, ushort target_level) {
+            std::vector<BloqueLOD> result;
+
+            if (xini > this->k_real_size_x - 1 || yini > this->k_real_size_y - 1) return result;
+            xend = std::min(xend, this->k_real_size_x - 1);
+            yend = std::min(yend, this->k_real_size_y - 1);
+
+            if (this->k_t.empty()) {
+                result.push_back({(uint32_t)xini, (uint32_t)yini, (uint32_t)(xend - xini + 1), (uint32_t)(yend - yini + 1), (int)this->k_max_value});
+                return result;
+            }
+
+            ushort k = this->get_k(0);
+            get_blocks_window_zoom_helper(xini, xend, yini, yend, 0, 0,
+                    this->k_max_value, 0, this->k_size / k, 1,
+                    result, target_level);
+            
+            return result;
+        }
+
         size_type get_values_window_zoom(size_type xini, size_type xend, size_type yini, size_type yend,
                                          ushort target_level, std::vector<value_type> &result) {
             size_type count_cells = 0; 
@@ -2409,10 +2438,75 @@ namespace k2raster {
             return count_cells;
         }
 
+        void get_blocks_window_zoom_helper(size_type xini, size_type xend, size_type yini, size_type yend,
+                                                    size_type base_x, size_type base_y,
+                                                    value_type f_max_value,
+                                                    size_type children_pos, size_type children_size, ushort level,
+                                                    std::vector<BloqueLOD> &result,
+                                                    ushort target_level) {
+                size_type pos;
+                size_type c_base_x, c_base_y;
+                value_type max_value;
 
+                ushort k = this->get_k(level-1);
+                bool is_uniform, is_leaf = level == this->k_height;
+                size_type limit_i_x = (xini - base_x) / children_size;
+                size_type limit_e_x = (xend - base_x) / children_size;
+                size_type limit_i_y = (yini - base_y) / children_size;
+                size_type limit_e_y = (yend - base_y) / children_size;
+
+                for (auto x = limit_i_x; x <= limit_e_x; x++) {
+                    c_base_x = base_x + x * children_size;
+                    for (auto y = limit_i_y; y <= limit_e_y; y++) {
+                        pos = children_pos + x * k + y;
+                        c_base_y = base_y + y * children_size;
+
+                        max_value = f_max_value - this->get_max_value(level, pos);
+
+                        auto c_xini = std::max(c_base_x, xini);
+                        auto c_xend = std::min(c_base_x + children_size - 1, xend);
+                        auto c_yini = std::max(c_base_y, yini);
+                        auto c_yend = std::min(c_base_y + children_size - 1, yend);
+
+                        is_uniform = is_leaf || !this->k_t[pos] || level == target_level;
+
+                        if (is_uniform) {
+                            // CASO DE PARADA: Guardamos un único bloque que representa esta intersección
+                            BloqueLOD bloque;
+                            bloque.fila = c_xini;
+                            bloque.columna = c_yini;
+                            bloque.alto = c_xend - c_xini + 1;
+                            bloque.ancho = c_yend - c_yini + 1;
+                            bloque.valor = max_value;
+                            result.push_back(bloque);
+                            continue;
+                        } else {
+                            if (this->is_plain_level(level)) {
+                                // Para niveles planos, lo simplificamos y guardamos el bloque entero de la zona
+                                BloqueLOD bloque;
+                                bloque.fila = c_xini;
+                                bloque.columna = c_yini;
+                                bloque.alto = c_xend - c_xini + 1;
+                                bloque.ancho = c_yend - c_yini + 1;
+                                bloque.valor = max_value;
+                                result.push_back(bloque);
+                            } else {
+                                size_type new_children_pos = this->get_children_position(pos, level);
+                                get_blocks_window_zoom_helper(c_xini, c_xend, c_yini, c_yend,
+                                                                    c_base_x, c_base_y, max_value,
+                                                                    new_children_pos,
+                                                                    children_size / this->get_k(level),
+                                                                    level + 1,
+                                                                    result, target_level);
+                            }
+                        }
+                    }
+                }
+            }
 
 
     };
+
 } // END NAMESPACE k2raster
 
 #endif // INCLUDED_K2_RASTER_

@@ -6,7 +6,8 @@ project(k2-raster)
 set(PROJECT_VENDOR "Fernando Silva-Coira")
 set(CMAKE_PROJECT_NAME "k2-raster")
 set(PROJECT_CONTACT "fernando.silva@udc.es")
-
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+add_compile_options(-fPIC)
 # Change to Debug or Relase
 set(CMAKE_BUILD_TYPE "Release")
 
