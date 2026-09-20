@@ -251,6 +251,61 @@ namespace k2raster {
             } // END BLOCK last levels
         }
 
+        //*******************************************************//
+        //***** GET CELL PROMEDIO (SIN BAJAR A LAS HOJAS)   *****//
+        //*******************************************************//
+        // Detiene la búsqueda en un nodo intermedio antes de las hojas (k_height)
+        // y retorna el promedio (min_value + max_value) / 2 del cuadrante K2-Raster.
+        value_type get_cell_promedio(size_type row, size_type col, ushort target_level = 0) const {
+            if (row >= this->k_real_size_x || col >= this->k_real_size_y) {
+                return 0;
+            }
+
+            if (this->k_t.empty()) {
+                return this->k_max_value;
+            }
+
+            // Fijar nivel máximo: se detiene al menos 1 nivel antes de las hojas (k_height - 1)
+            ushort max_level = (target_level == 0 || target_level >= this->k_height) ? (this->k_height - 1) : target_level;
+            if (max_level < 1) max_level = 1;
+
+            size_type size = this->k_size;
+            size_type child_pos = 0;
+            value_type max_value = this->k_max_value;
+            value_type min_value = this->k_min_value;
+
+            ushort k = this->get_k(0);
+            size_type child;
+
+            for (ushort l = 1; l <= max_level; l++) {
+                size /= k;
+                child = (row / size) * k + (col / size);
+                child_pos += child;
+                max_value -= this->get_max_value(l, child_pos);
+
+                // Si la submatriz es uniforme (todos los elementos iguales)
+                if (!this->k_t[child_pos]) {
+                    return max_value;
+                }
+
+                // Obtener el valor mínimo del nodo intermedio
+                size_type ones = this->k_t_rank1(child_pos) + 1;
+                min_value += this->get_min_value(l, ones - 1);
+
+                // Si alcanzamos el nivel de corte antes de las hojas, retornamos el promedio
+                if (l == max_level) {
+                    return (min_value + max_value) / 2;
+                }
+
+                row = row % size;
+                col = col % size;
+                child_pos = this->get_children_position_ones(ones, l);
+                k = this->get_k(l);
+            }
+
+            return (min_value + max_value) / 2;
+        }
+
         //*****************************//
         //***** GET CELL BY VALUE *****//
         //*****************************//
@@ -2342,10 +2397,14 @@ namespace k2raster {
                 return result;
             }
 
+            // Evitar llegar a las hojas (k_height) si se solicita el nivel máximo
+            ushort safe_target_level = (target_level == 0 || target_level >= this->k_height) ? (this->k_height - 1) : target_level;
+            if (safe_target_level < 1) safe_target_level = 1;
+
             ushort k = this->get_k(0);
             get_blocks_window_zoom_helper(xini, xend, yini, yend, 0, 0,
-                    this->k_max_value, 0, this->k_size / k, 1,
-                    result, target_level);
+                    this->k_min_value, this->k_max_value, 0, this->k_size / k, 1,
+                    result, safe_target_level);
             
             return result;
         }
@@ -2440,13 +2499,14 @@ namespace k2raster {
 
         void get_blocks_window_zoom_helper(size_type xini, size_type xend, size_type yini, size_type yend,
                                                     size_type base_x, size_type base_y,
-                                                    value_type f_max_value,
+                                                    value_type f_min_value, value_type f_max_value,
                                                     size_type children_pos, size_type children_size, ushort level,
                                                     std::vector<BloqueLOD> &result,
                                                     ushort target_level) {
                 size_type pos;
                 size_type c_base_x, c_base_y;
                 value_type max_value;
+                value_type min_value;
 
                 ushort k = this->get_k(level-1);
                 bool is_uniform, is_leaf = level == this->k_height;
@@ -2462,6 +2522,11 @@ namespace k2raster {
                         c_base_y = base_y + y * children_size;
 
                         max_value = f_max_value - this->get_max_value(level, pos);
+                        min_value = max_value;
+                        if (!is_leaf && this->k_t[pos]) {
+                            size_type ones = this->k_t_rank1(pos) + 1;
+                            min_value = f_min_value + this->get_min_value(level, ones - 1);
+                        }
 
                         auto c_xini = std::max(c_base_x, xini);
                         auto c_xend = std::min(c_base_x + children_size - 1, xend);
@@ -2471,29 +2536,30 @@ namespace k2raster {
                         is_uniform = is_leaf || !this->k_t[pos] || level == target_level;
 
                         if (is_uniform) {
-                            // CASO DE PARADA: Guardamos un único bloque que representa esta intersección
+                            // CASO DE PARADA: Retornamos bloque con promedio si se corta en target_level
                             BloqueLOD bloque;
                             bloque.fila = c_xini;
                             bloque.columna = c_yini;
                             bloque.alto = c_xend - c_xini + 1;
                             bloque.ancho = c_yend - c_yini + 1;
-                            bloque.valor = max_value;
+                            // Si paramos antes de las hojas en un nodo no uniforme, usamos el promedio
+                            bloque.valor = (level == target_level && !is_leaf && this->k_t[pos]) ? ((min_value + max_value) / 2) : max_value;
                             result.push_back(bloque);
                             continue;
                         } else {
                             if (this->is_plain_level(level)) {
-                                // Para niveles planos, lo simplificamos y guardamos el bloque entero de la zona
                                 BloqueLOD bloque;
                                 bloque.fila = c_xini;
                                 bloque.columna = c_yini;
                                 bloque.alto = c_xend - c_xini + 1;
                                 bloque.ancho = c_yend - c_yini + 1;
-                                bloque.valor = max_value;
+                                bloque.valor = (min_value + max_value) / 2;
                                 result.push_back(bloque);
                             } else {
                                 size_type new_children_pos = this->get_children_position(pos, level);
                                 get_blocks_window_zoom_helper(c_xini, c_xend, c_yini, c_yend,
-                                                                    c_base_x, c_base_y, max_value,
+                                                                    c_base_x, c_base_y,
+                                                                    min_value, max_value,
                                                                     new_children_pos,
                                                                     children_size / this->get_k(level),
                                                                     level + 1,

@@ -40,7 +40,7 @@
 //}
 
 template<typename k2_raster_type>
-void run_encode(std::vector<int> values, size_t n_rows, size_t n_cols,
+void run_encode(std::vector<int>& values, size_t n_rows, size_t n_cols,
                 ushort k1, ushort k2, ushort level_k1, ushort plains_levels,
                 std::string output_data, bool set_check) {
 

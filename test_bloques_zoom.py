@@ -3,9 +3,9 @@ import time
 print("Cargando motor...")
 raster = k2raster_engine.K2Raster()
 raster.load("mapa_comprimido.k2r")
-x_ini, x_fin = 500, 599
-y_ini, y_fin = 500, 599
-nivel_zoom = 3
+x_ini, x_fin = 100, 120
+y_ini, y_fin = 302, 312
+nivel_zoom = 10
 print(f"Consultando X[{x_ini}:{x_fin}] Y[{y_ini}:{y_fin}] con Zoom Nivel {nivel_zoom}...")
 inicio = time.time()
 bloques = raster.get_blocks_window_zoom(x_ini, x_fin, y_ini, y_fin, nivel_zoom)

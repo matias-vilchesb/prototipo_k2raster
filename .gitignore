@@ -3,11 +3,18 @@ build/
 bin/
 lib/
 
-# Ignorar archivos temporales de Python
+# Ignorar archivos temporales de Python y librerías compiladas
 __pycache__/
 *.pyc
+*.so
 
-# Ignorar tus datos de prueba (para que no pesen en GitHub)
+# Ignorar datos binarios y reportes residuales pesados
 *.bin
 *.tif
 *.k2r
+*.html
+
+# Permitir mapa de ejemplo y GeoTIFF para ejecución inmediata
+!RGB.byte.tif
+!mapa_comprimido.k2r
+
