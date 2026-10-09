@@ -11,8 +11,8 @@ from collections import OrderedDict
 
 import sys
 
-PORT = 8000
-# Selección de archivo: argumento CLI -> mapa_relieve_1152M.k2r (local) -> mapa_comprimido.k2r (GitHub/fallback)
+PORT = 8081
+
 if len(sys.argv) > 1:
     RASTER_FILE = sys.argv[1]
 elif os.path.exists("mapa_relieve_1152M.k2r"):
@@ -56,7 +56,7 @@ raster_info = {
     "nombre": f"🗺️ {os.path.basename(RASTER_FILE)} ({total_cells:,} celdas)",
     "load_time_ms": dt_load
 }
-print(f"✅ Mapa cargado en {dt_load:.2f} ms: {rows}x{cols} ({total_cells:,} celdas) [Árbol K2-Raster: {height} niveles]")
+print(f" Mapa cargado en {dt_load:.2f} ms: {rows}x{cols} ({total_cells:,} celdas) [Árbol K2-Raster: {height} niveles]")
 
 viewport_cache = OrderedDict()
 MAX_CACHE_SIZE = 120
@@ -134,6 +134,30 @@ HTML_PAGE = """<!DOCTYPE html>
             border-left: 1px solid rgba(255,255,255,0.15);
             padding-left: 10px;
         }
+        .hud-divider {
+            width: 1px;
+            height: 14px;
+            background: rgba(255, 255, 255, 0.15);
+            margin: 0 2px;
+            flex-shrink: 0;
+        }
+        .hud-cell-info {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            white-space: nowrap;
+        }
+        .hud-cell-coord {
+            color: #e2e8f0;
+            font-weight: 600;
+        }
+        .hud-cell-val {
+            color: #f59e0b;
+            font-weight: 700;
+        }
+        .hud-sublabel {
+            color: #94a3b8;
+        }
 
         /* Botones Flotantes de Zoom */
         .zoom-controls {
@@ -180,6 +204,11 @@ HTML_PAGE = """<!DOCTYPE html>
     <div class="floating-hud">
         <span class="hud-dot"></span>
         <span>Tiempo de respuesta: <strong class="hud-time-val" id="hud-time">0.0 ms</strong></span>
+        <span class="hud-divider"></span>
+        <span class="hud-cell-info">
+            <span><span class="hud-sublabel">Celda:</span> <strong class="hud-cell-coord" id="cell-coords">—</strong></span>
+            <span><span class="hud-sublabel">Valor:</span> <strong class="hud-cell-val" id="cell-val">—</strong></span>
+        </span>
         <span class="hud-cells-badge" id="hud-cells"></span>
     </div>
 
@@ -356,6 +385,9 @@ HTML_PAGE = """<!DOCTYPE html>
                 lastCols = outCols;
 
                 redrawCanvas();
+                if (lastMousePos && !isDragging) {
+                    updateHoverCell(lastMousePos.x, lastMousePos.y, false);
+                }
 
                 document.getElementById('hud-time').textContent = `${parseFloat(queryTime).toFixed(2)} ms`;
             } catch (err) {
@@ -366,6 +398,60 @@ HTML_PAGE = """<!DOCTYPE html>
                     nextFetchRequested = false;
                     renderViewport();
                 }
+            }
+        }
+
+        let lastMousePos = null;
+        let cellHoverTimeout = null;
+        let lastRequestedCell = { row: -1, col: -1 };
+
+        function updateHoverCell(clientX, clientY, allowFetch = true) {
+            if (!rasterInfo.rows || !rasterInfo.cols) return;
+
+            const rect = canvas.getBoundingClientRect();
+            const mouseNormX = (clientY - rect.top) / rect.height;
+            const mouseNormY = (clientX - rect.left) / rect.width;
+
+            const spanX = rasterInfo.rows / zoomLevel;
+            const spanY = rasterInfo.cols / zoomLevel;
+
+            const curRow = Math.floor((centerX - spanX / 2) + mouseNormX * spanX);
+            const curCol = Math.floor((centerY - spanY / 2) + mouseNormY * spanY);
+
+            const coordsElem = document.getElementById('cell-coords');
+            const valElem = document.getElementById('cell-val');
+
+            if (curRow >= 0 && curRow < rasterInfo.rows && curCol >= 0 && curCol < rasterInfo.cols) {
+                coordsElem.textContent = `[${curRow.toLocaleString()}, ${curCol.toLocaleString()}]`;
+
+                // Valor preliminar instantáneo desde el búfer renderizado en pantalla (0 ms de latencia)
+                if (lastRawBuffer && lastRows > 0 && lastCols > 0) {
+                    const bufRow = Math.floor(mouseNormX * lastRows);
+                    const bufCol = Math.floor(mouseNormY * lastCols);
+                    if (bufRow >= 0 && bufRow < lastRows && bufCol >= 0 && bufCol < lastCols) {
+                        valElem.textContent = lastRawBuffer[bufRow * lastCols + bufCol];
+                    }
+                }
+
+                // Consulta precisa al árbol K2-Raster en C++
+                if (allowFetch) {
+                    clearTimeout(cellHoverTimeout);
+                    lastRequestedCell = { row: curRow, col: curCol };
+                    cellHoverTimeout = setTimeout(async () => {
+                        const targetR = curRow;
+                        const targetC = curCol;
+                        try {
+                            const res = await fetch(`/api/cell?row=${targetR}&col=${targetC}`);
+                            const data = await res.json();
+                            if (lastRequestedCell.row === data.row && lastRequestedCell.col === data.col && data.val !== null) {
+                                valElem.textContent = data.val;
+                            }
+                        } catch (err) {}
+                    }, 25);
+                }
+            } else {
+                coordsElem.textContent = '—';
+                valElem.textContent = '—';
             }
         }
 
@@ -394,6 +480,7 @@ HTML_PAGE = """<!DOCTYPE html>
                     centerY = targetCol + (0.5 - mouseNormY) * newSpanY;
 
                     renderViewport();
+                    updateHoverCell(e.clientX, e.clientY, true);
                 }
             }, { passive: false });
 
@@ -404,6 +491,7 @@ HTML_PAGE = """<!DOCTYPE html>
             });
 
             window.addEventListener('mousemove', (e) => {
+                lastMousePos = { x: e.clientX, y: e.clientY };
                 if (isDragging) {
                     const dx = e.clientX - dragStart.x;
                     const dy = e.clientY - dragStart.y;
@@ -416,6 +504,9 @@ HTML_PAGE = """<!DOCTYPE html>
                     centerY -= (dx / canvas.width) * spanY;
 
                     renderViewport();
+                    updateHoverCell(e.clientX, e.clientY, false);
+                } else {
+                    updateHoverCell(e.clientX, e.clientY, true);
                 }
             });
 
@@ -423,7 +514,16 @@ HTML_PAGE = """<!DOCTYPE html>
                 if (isDragging) {
                     isDragging = false;
                     renderViewport();
+                    if (lastMousePos) {
+                        updateHoverCell(lastMousePos.x, lastMousePos.y, true);
+                    }
                 }
+            });
+
+            canvas.addEventListener('mouseleave', () => {
+                lastMousePos = null;
+                document.getElementById('cell-coords').textContent = '—';
+                document.getElementById('cell-val').textContent = '—';
             });
 
             window.addEventListener('dblclick', () => {
@@ -499,6 +599,32 @@ class RasterViewerHandler(http.server.BaseHTTPRequestHandler):
             self.send_header("X-Cols", str(out_cols))
             self.end_headers()
             self.wfile.write(raw_bytes)
+
+        elif path == "/api/cell":
+            r_rows = raster_info["rows"]
+            r_cols = raster_info["cols"]
+            row = int(query.get("row", [-1])[0])
+            col = int(query.get("col", [-1])[0])
+
+            if 0 <= row < r_rows and 0 <= col < r_cols:
+                t0 = time.perf_counter()
+                val = int(raster.get_cell(row, col))
+                dt_us = (time.perf_counter() - t0) * 1e6
+            else:
+                val = None
+                dt_us = 0.0
+
+            res_obj = {
+                "row": row,
+                "col": col,
+                "val": val,
+                "time_us": round(dt_us, 1)
+            }
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json")
+            self.send_header("Cache-Control", "no-cache")
+            self.end_headers()
+            self.wfile.write(json.dumps(res_obj).encode("utf-8"))
 
         else:
             self.send_response(404)
