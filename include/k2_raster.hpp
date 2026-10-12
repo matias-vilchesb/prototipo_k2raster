@@ -251,11 +251,38 @@ namespace k2raster {
             } // END BLOCK last levels
         }
 
+        // Calcula el nivel adecuado del árbol cuando avanza el visor
+        ushort get_level_for_step(size_type step) const {
+            if (step <= 1) return this->k_height; 
+            size_type s = this->k_size;
+            for (ushort l = 1; l < this->k_height; l++) {
+                ushort k = this->get_k(l - 1);
+                s /= k;
+                if (s <= step) {
+                    return l;
+                }
+            }
+            return (this->k_height > 1) ? (this->k_height - 1) : 1;
+        }
+
+        // Obtiene el tamaño de cuadrante/bloque correspondiente a un nivel del árbol
+        size_type get_block_size(ushort level) const {
+            if (level == 0) return this->k_size;
+            if (level >= this->k_height) return 1;
+            size_type s = this->k_size;
+            for (ushort l = 1; l <= level; l++) {
+                ushort k = this->get_k(l - 1);
+                s /= k;
+            }
+            return (s > 0) ? s : 1;
+        }
+
         //*******************************************************//
-        //***** GET CELL PROMEDIO (SIN BAJAR A LAS HOJAS)   *****//
+        //***** GET CELL PROMEDIO   *****//
         //*******************************************************//
-        // Detiene la búsqueda en un nodo intermedio antes de las hojas (k_height)
+        // Detiene la búsqueda en un nodo intermedio (target_level)
         // y retorna el promedio (min_value + max_value) / 2 del cuadrante K2-Raster.
+        // Si target_level >= k_height, desciende a las hojas (valor exacto).
         value_type get_cell_promedio(size_type row, size_type col, ushort target_level = 0) const {
             if (row >= this->k_real_size_x || col >= this->k_real_size_y) {
                 return 0;
@@ -265,9 +292,15 @@ namespace k2raster {
                 return this->k_max_value;
             }
 
-            // Fijar nivel máximo: se detiene al menos 1 nivel antes de las hojas (k_height - 1)
-            ushort max_level = (target_level == 0 || target_level >= this->k_height) ? (this->k_height - 1) : target_level;
+            // Si el nivel solicitado alcanza o supera las hojas, se retorna el valor exacto de la celda
+            if (target_level >= this->k_height && target_level > 0) {
+                return this->get_cell(row, col);
+            }
+
+            // Fijar nivel máximo: si no se especifica (0), por defecto se detiene 1 nivel antes de las hojas (k_height - 1)
+            ushort max_level = (target_level == 0) ? (this->k_height - 1) : target_level;
             if (max_level < 1) max_level = 1;
+            if (max_level >= this->k_height) max_level = this->k_height - 1;
 
             size_type size = this->k_size;
             size_type child_pos = 0;

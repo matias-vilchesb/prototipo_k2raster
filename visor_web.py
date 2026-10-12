@@ -370,14 +370,16 @@ HTML_PAGE = """<!DOCTYPE html>
             if (x_fin <= x_ini) x_fin = Math.min(rasterInfo.rows - 1, x_ini + 1);
             if (y_fin <= y_ini) y_fin = Math.min(rasterInfo.cols - 1, y_ini + 1);
 
-            // Evita descender a las hojas y usa el promedio K2-Raster en el zoom
-            const url = `/api/viewport_raw?x_ini=${x_ini}&x_fin=${x_fin}&y_ini=${y_ini}&y_fin=${y_fin}&w=${targetW}&h=${targetH}&avoid_leaves=1`;
+            // Nivel adaptativo calculado por el motor según lo que permite el visualizador
+            const url = `/api/viewport_raw?x_ini=${x_ini}&x_fin=${x_fin}&y_ini=${y_ini}&y_fin=${y_fin}&w=${targetW}&h=${targetH}`;
 
             try {
                 const response = await fetch(url);
                 const queryTime = response.headers.get('X-Query-Time') || '0';
                 const outRows = parseInt(response.headers.get('X-Rows') || '0');
                 const outCols = parseInt(response.headers.get('X-Cols') || '0');
+                const targetLevel = response.headers.get('X-Target-Level') || '0';
+                const isLeaf = response.headers.get('X-Is-Leaf') === '1';
 
                 const arrayBuffer = await response.arrayBuffer();
                 lastRawBuffer = new Uint8Array(arrayBuffer);
@@ -568,20 +570,27 @@ class RasterViewerHandler(http.server.BaseHTTPRequestHandler):
             target_w = int(query.get("w", [800])[0])
             target_h = int(query.get("h", [450])[0])
             avoid_leaves = query.get("avoid_leaves", ["1"])[0] in ("1", "true", "True")
+            target_level = int(query.get("target_level", [0])[0])
 
-            cache_key = (x_ini, x_fin, y_ini, y_fin, target_w, target_h, avoid_leaves)
+            cache_key = (x_ini, x_fin, y_ini, y_fin, target_w, target_h, avoid_leaves, target_level)
 
             if cache_key in viewport_cache:
-                raw_bytes, out_rows, out_cols = viewport_cache[cache_key]
+                raw_bytes, out_rows, out_cols, eff_level, is_leaf = viewport_cache[cache_key]
                 viewport_cache.move_to_end(cache_key)
                 dt_ms = 0.0
             else:
                 t0 = time.perf_counter()
-                vp = raster.get_viewport(x_ini, x_fin, y_ini, y_fin, target_width=target_w, target_height=target_h, avoid_leaves=avoid_leaves)
+                vp = raster.get_viewport(
+                    x_ini, x_fin, y_ini, y_fin,
+                    target_width=target_w, target_height=target_h,
+                    avoid_leaves=avoid_leaves, target_level=target_level
+                )
                 dt_ms = (time.perf_counter() - t0) * 1000
 
                 out_rows = vp["rows"]
                 out_cols = vp["cols"]
+                eff_level = vp.get("target_level", 0)
+                is_leaf = vp.get("is_leaf", False)
 
                 if out_rows > 0 and out_cols > 0:
                     raw_bytes = np.array(vp["data"], dtype=np.uint8).tobytes()
@@ -590,13 +599,15 @@ class RasterViewerHandler(http.server.BaseHTTPRequestHandler):
 
                 if len(viewport_cache) >= MAX_CACHE_SIZE:
                     viewport_cache.popitem(last=False)
-                viewport_cache[cache_key] = (raw_bytes, out_rows, out_cols)
+                viewport_cache[cache_key] = (raw_bytes, out_rows, out_cols, eff_level, is_leaf)
 
             self.send_response(200)
             self.send_header("Content-Type", "application/octet-stream")
             self.send_header("X-Query-Time", f"{dt_ms:.2f}")
             self.send_header("X-Rows", str(out_rows))
             self.send_header("X-Cols", str(out_cols))
+            self.send_header("X-Target-Level", str(eff_level))
+            self.send_header("X-Is-Leaf", "1" if is_leaf else "0")
             self.end_headers()
             self.wfile.write(raw_bytes)
 

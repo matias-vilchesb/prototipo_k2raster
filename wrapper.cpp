@@ -61,7 +61,7 @@ PYBIND11_MODULE(k2raster_engine, m) {
                                       size_t x_ini, size_t x_fin,
                                       size_t y_ini, size_t y_fin,
                                       size_t step_x, size_t step_y,
-                                      bool avoid_leaves) {
+                                      bool avoid_leaves, ushort target_level) {
             std::vector<int> resultado;
             if (self.m_real_size_x == 0 || self.m_real_size_y == 0) return resultado;
             if (x_ini >= self.m_real_size_x || y_ini >= self.m_real_size_y) return resultado;
@@ -75,17 +75,38 @@ PYBIND11_MODULE(k2raster_engine, m) {
             size_t n_cols = (y_fin >= y_ini) ? ((y_fin - y_ini) / step_y + 1) : 0;
             resultado.reserve(n_rows * n_cols);
 
+            size_t max_step = std::max(step_x, step_y);
+            ushort eff_level = target_level;
+            if (eff_level == 0) {
+                eff_level = self.get_level_for_step(max_step);
+            }
+            bool use_leaves = (!avoid_leaves) || (eff_level >= self.height) || (max_step <= 1);
+            size_t block_s = use_leaves ? 1 : self.get_block_size(eff_level);
+
+            size_t last_bx = (size_t)-1;
+            size_t last_by = (size_t)-1;
+            int last_val = 0;
+
             for (size_t x = x_ini; x <= x_fin; x += step_x) {
                 for (size_t y = y_ini; y <= y_fin; y += step_y) {
-                    if (avoid_leaves) {
-                        resultado.push_back(self.get_cell_promedio(x, y));
+                    if (!use_leaves) {
+                        size_t bx = x / block_s;
+                        size_t by = y / block_s;
+                        if (bx == last_bx && by == last_by) {
+                            resultado.push_back(last_val);
+                        } else {
+                            last_val = self.get_cell_promedio(x, y, eff_level);
+                            last_bx = bx;
+                            last_by = by;
+                            resultado.push_back(last_val);
+                        }
                     } else {
                         resultado.push_back(self.get_cell(x, y));
                     }
                 }
             }
             return resultado;
-        }, py::arg("x_ini"), py::arg("x_fin"), py::arg("y_ini"), py::arg("y_fin"), py::arg("step_x") = 1, py::arg("step_y") = 1, py::arg("avoid_leaves") = false)
+        }, py::arg("x_ini"), py::arg("x_fin"), py::arg("y_ini"), py::arg("y_fin"), py::arg("step_x") = 1, py::arg("step_y") = 1, py::arg("avoid_leaves") = false, py::arg("target_level") = 0)
         // Muestreo adaptativo para Viewport / Pantalla de visualización
         .def("get_viewport", [](const k2raster::k2_raster<int>& self,
                                 size_t x_ini, size_t x_fin,
@@ -100,6 +121,8 @@ PYBIND11_MODULE(k2raster_engine, m) {
                 res["cols"] = 0;
                 res["step_x"] = 1;
                 res["step_y"] = 1;
+                res["target_level"] = 0;
+                res["is_leaf"] = false;
                 return res;
             }
 
@@ -114,10 +137,18 @@ PYBIND11_MODULE(k2raster_engine, m) {
             size_t step_x = std::max((size_t)1, win_h / target_height);
             size_t step_y = std::max((size_t)1, win_w / target_width);
 
+            size_t max_step = std::max(step_x, step_y);
+            ushort eff_level = target_level;
+            if (eff_level == 0) {
+                eff_level = self.get_level_for_step(max_step);
+            }
+
+            bool use_leaves = (!avoid_leaves) || (eff_level >= self.height) || (max_step <= 1);
+            size_t block_s = use_leaves ? 1 : self.get_block_size(eff_level);
+
             size_t out_rows = 0;
             size_t out_cols = 0;
 
-            size_t block_s = self.k2 > 0 ? (size_t)self.k2 : 2;
             size_t last_bx = (size_t)-1;
             size_t last_by = (size_t)-1;
             int last_val = 0;
@@ -127,13 +158,13 @@ PYBIND11_MODULE(k2raster_engine, m) {
                 size_t current_cols = 0;
                 for (size_t y = y_ini; y <= y_fin; y += step_y) {
                     current_cols++;
-                    if (avoid_leaves) {
+                    if (!use_leaves) {
                         size_t bx = x / block_s;
                         size_t by = y / block_s;
                         if (bx == last_bx && by == last_by) {
                             resultado.push_back(last_val);
                         } else {
-                            last_val = self.get_cell_promedio(x, y, target_level);
+                            last_val = self.get_cell_promedio(x, y, eff_level);
                             last_bx = bx;
                             last_by = by;
                             resultado.push_back(last_val);
@@ -150,8 +181,12 @@ PYBIND11_MODULE(k2raster_engine, m) {
             res["cols"] = out_cols;
             res["step_x"] = step_x;
             res["step_y"] = step_y;
+            res["target_level"] = eff_level;
+            res["is_leaf"] = use_leaves;
             return res;
         }, py::arg("x_ini"), py::arg("x_fin"), py::arg("y_ini"), py::arg("y_fin"), py::arg("target_width") = 100, py::arg("target_height") = 100, py::arg("avoid_leaves") = true, py::arg("target_level") = 0)
+        .def("get_level_for_step", &k2raster::k2_raster<int>::get_level_for_step, py::arg("step"))
+        .def("get_block_size", &k2raster::k2_raster<int>::get_block_size, py::arg("level"))
         // Función de zoom corregida existente
         .def("get_values_window_zoom", [](k2raster::k2_raster<int> &self, int x_ini, int x_fin, int y_ini, int y_fin, int zoom) {
             std::vector<int> resultado;
