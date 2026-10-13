@@ -15,17 +15,15 @@ PORT = 8081
 
 if len(sys.argv) > 1:
     RASTER_FILE = sys.argv[1]
-elif os.path.exists("mapa_relieve_1152M.k2r"):
-    RASTER_FILE = "mapa_relieve_1152M.k2r"
-elif os.path.exists("mapa_comprimido.k2r"):
-    RASTER_FILE = "mapa_comprimido.k2r"
+elif os.path.exists("etopo2022.k2r"):
+    RASTER_FILE = "etopo2022.k2r"
 else:
     k2r_files = [f for f in os.listdir(".") if f.endswith(".k2r")]
     if k2r_files:
         RASTER_FILE = k2r_files[0]
     else:
-        print("No se encontró ningún archivo .k2r")
-        print("para usar: python3 visor_web.py <archivo.k2r>")
+        print("Error: No se encontró el mapa 'etopo2022.k2r'.")
+        print("Uso: python3 visor_web.py <archivo.k2r>")
         sys.exit(1)
 
 class ThreadingHTTPServer(ThreadingMixIn, socketserver.TCPServer):
@@ -427,7 +425,7 @@ HTML_PAGE = """<!DOCTYPE html>
                 coordsElem.textContent = `[${curRow.toLocaleString()}, ${curCol.toLocaleString()}]`;
 
                 // Valor preliminar instantáneo desde el búfer renderizado en pantalla (0 ms de latencia)
-                if (lastRawBuffer && lastRows > 0 && lastCols > 0) {
+                if (lastRawBuffer && lastRows > 0 && lastCols > 0 && rasterInfo.max_val <= 255 && rasterInfo.min_val >= 0) {
                     const bufRow = Math.floor(mouseNormX * lastRows);
                     const bufCol = Math.floor(mouseNormY * lastCols);
                     if (bufRow >= 0 && bufRow < lastRows && bufCol >= 0 && bufCol < lastCols) {
@@ -446,7 +444,8 @@ HTML_PAGE = """<!DOCTYPE html>
                             const res = await fetch(`/api/cell?row=${targetR}&col=${targetC}`);
                             const data = await res.json();
                             if (lastRequestedCell.row === data.row && lastRequestedCell.col === data.col && data.val !== null) {
-                                valElem.textContent = data.val;
+                                const isElevation = rasterInfo.max_val > 255 || rasterInfo.min_val < 0;
+                                valElem.textContent = isElevation ? `${data.val.toLocaleString()} m` : data.val;
                             }
                         } catch (err) {}
                     }, 25);
@@ -593,7 +592,23 @@ class RasterViewerHandler(http.server.BaseHTTPRequestHandler):
                 is_leaf = vp.get("is_leaf", False)
 
                 if out_rows > 0 and out_cols > 0:
-                    raw_bytes = np.array(vp["data"], dtype=np.uint8).tobytes()
+                    arr = np.array(vp["data"], dtype=np.int32)
+                    if max_val > 255 or min_val < 0:
+                        vis = np.zeros(arr.shape, dtype=np.uint8)
+                        mask_ocean = (arr <= 0)
+                        mask_land = (arr > 0)
+                        if np.any(mask_ocean):
+                            if min_val < 0:
+                                ocean_norm = np.clip((arr[mask_ocean] - min_val) / (0.0 - min_val), 0.0, 1.0)
+                                vis[mask_ocean] = np.round(20 + ocean_norm * 86).astype(np.uint8)
+                            else:
+                                vis[mask_ocean] = 50
+                        if np.any(mask_land):
+                            top_val = max(1.0, float(max_val))
+                            vis[mask_land] = np.clip(107 + (arr[mask_land] / top_val) * 148, 107, 255).astype(np.uint8)
+                        raw_bytes = vis.tobytes()
+                    else:
+                        raw_bytes = np.clip(arr, 0, 255).astype(np.uint8).tobytes()
                 else:
                     raw_bytes = b""
 
